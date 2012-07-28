@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Greg Leuch</string>
+	<key>Builder Version</key>
+	<string>6534.57.2</string>
+	<key>CFBundleDisplayName</key>
+	<string>Olwimpics</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.ffffat.olwimpics</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.0</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Global Page</key>
+		<string>background.html</string>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>Start</key>
+			<array>
+				<string>js/jquery-1.7.2.min.js</string>
+				<string>js/blocker.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Preserving your athletic self-esteem during your daily finger exercises.</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://addons.foryoutomake.com/olwimpics/safari/update.plist</string>
+	<key>Website</key>
+	<string>http://fffff.at/olwimpics</string>
+</dict>
+</plist>
