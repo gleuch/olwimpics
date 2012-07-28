@@ -32,6 +32,7 @@ var Olwimpics = {
   keywords : [
     'olympics.org', 'international olympic committee', 'ioc', '(summer|winter|ancient) (games|olmpyics)', 'london(\s2012)?(\sgames)?', 'sports', '(opening|closing) ceremon(y|ies)', 'competition',
     'olympic( (games|motto))?', 'olympics',
+    'gold( medal)?', 'silver( medal)?', 'bronze( medal)?',
     '([0-9\,\.]+)( |)((kilo|m)et(er|re))(s)?', '([0-9\,\.]+)( |)(km|m)',
     'track\s(and|\&amp;|\&)\sfield', 'decathalon', '(long|high|triple)\sjump', 'hurdle(s)?', 'pole\svault', 'shot(\s)?put', 'discus\sthrow', 'javelin(\sthrow)?', 'hammer throw',
     'archery', 'athletics', 'aquatics', 'badminton', 'basketball', 'boxing', 'canoeing', 'cycling', 'diving', 'equestrian', 'fencing', 'field\shockey', 'football', 'soccer', 'gymnastics', 'handball', 'judo', '(modern\s)?Pentathlon', 'rowing', 'sailing', 'shooting', '(synchronized\s)?swimming', 'table tennis', 'taekwondo', 'tennis', 'triathlon', '(beach\s)?volleyball', 'water\spolo', 'weightlifting', 'wrestling',
@@ -171,7 +172,7 @@ var Olwimpics = {
       try {
         var r = jQuery(this), text = r.attr('src') +' '+ r.attr('alt') +' '+ r.attr('title');
         if (!r.hasClass(Olwimpics._class_name) && text.match(Olwimpics._regexp)) {
-          var w = r.width(), h = r.height(), color = 
+          var w = r.width(), h = r.height();
           r.addClass(Olwimpics._class_name).css({'background': Olwimpics.medal() +' !important', 'width': w+'px !important', 'height': h+'px !important'}).attr('src', chrome.extension.getURL('images/blank.png')).attr('title', Olwimpics._blocked_text).attr('alt', Olwimpics._blocked_text).width(w).height(h);
         }
       } catch(e) {}

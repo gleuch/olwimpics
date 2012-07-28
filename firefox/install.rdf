@@ -4,14 +4,14 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>olwimpics@fffff.at</em:id>
     <em:name>Olwimpics</em:name>
-    <em:version>1.0.0</em:version>
+    <em:version>1.0.1</em:version>
 
     <em:creator>Greg Leuch (@gleuch)</em:creator>
     <em:developer>Greg Leuch</em:developer>
     <em:description>Preserving your athletic self-esteem during your daily finger exercises.</em:description>
     <em:homepageURL>http://fffff.at/olwimpics</em:homepageURL>
-    <em:iconURL>chrome://olwimpics/skin/icons/icon48.png</em:iconURL>
-    <em:icon64URL>chrome://olwimpics/skin/icons/icon64.png</em:icon64URL>
+    <em:iconURL>chrome://olwimpics/skin/icons/olwimpics48.png</em:iconURL>
+    <em:icon64URL>chrome://olwimpics/skin/icons/olwimpics64.png</em:icon64URL>
 
     <em:bootstrap>true</em:bootstrap>
 
