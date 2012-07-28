@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+ xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>olwimpics@fffff.at</em:id>
+    <em:name>Olwimpics</em:name>
+    <em:version>1.0.0</em:version>
+
+    <em:creator>Greg Leuch (@gleuch)</em:creator>
+    <em:developer>Greg Leuch</em:developer>
+    <em:description>Preserving your athletic self-esteem during your daily finger exercises.</em:description>
+    <em:homepageURL>http://fffff.at/olwimpics</em:homepageURL>
+    <em:iconURL>chrome://olwimpics/skin/icons/icon48.png</em:iconURL>
+    <em:icon64URL>chrome://olwimpics/skin/icons/icon64.png</em:icon64URL>
+
+    <em:bootstrap>true</em:bootstrap>
+
+    <em:updateKey>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCiQRxsfKWJ8AkpPswNTf/tWVEpSXkOtNDVoT/u6mGF2OabDPuCPw49OVrd/Ul4a9/DCXya5YDW9wMvlmzSTKg+iJ+ZRJOEtTmDRsRx667vv5T/hve1YL4GKK26Fj0BSKE8Y9K+NOQVNYpLBC1yeT5IatZlIUDntbdpGPKbChw+AwIDAQAB</em:updateKey>
+    <em:updateURL>http://addons.foryoutomake.com/olwimpics/firefox/update</em:updateURL>
+    <em:updateInfoURL>http://addons.foryoutomake.com/olwimpics/firefox/summary</em:updateInfoURL>
+
+    <em:type>2</em:type>
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- firefox -->
+        <em:minVersion>10.*</em:minVersion>
+        <em:maxVersion>15.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

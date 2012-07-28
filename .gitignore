@@ -3,3 +3,5 @@
 *.zip
 *.xpi
 *.safariextz
+update.rdf
+bin/
