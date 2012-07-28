@@ -32,8 +32,25 @@ http://addons.foryoutomake.com/olwimpics/safari/download
 
 #######################################################################################
 
+Press!
+
+BoingBoing
+http://boingboing.net/2012/07/28/sick-of-the-olympics-already.html
+
+TechCrunch
+http://techcrunch.com/2012/07/28/techcrunch-psa-olwimpics-blocker-blocks-the-olympics
+
+Modern Primate
+http://www.modernprimate.com/olwimpics-browser-plugin-blocks-all-mentions-of-the-olympics
+
+
+#######################################################################################
+
 Changelog
 
+v 1.0.2
+  - Don't alter page title until document ready.
+  - Include 'olympians' keyword (ht Chris Menning @ Modern Primate)
 v 1.0.1
   - Added keywords for gold, silver, bronze medals.
   - Wrong path for icons and images for Firefox.

@@ -31,7 +31,7 @@ var Olwimpics = {
 
   keywords : [
     'olympics.org', 'international olympic committee', 'ioc', '(summer|winter|ancient) (games|olmpyics)', 'london(\s2012)?(\sgames)?', 'sports', '(opening|closing) ceremon(y|ies)', 'competition',
-    'olympic( (games|motto))?', 'olympics',
+    'olympic( (games|motto))?', 'olympics', 'olympian(s)?',
     'gold( medal)?', 'silver( medal)?', 'bronze( medal)?',
     '([0-9\,\.]+)( |)((kilo|m)et(er|re))(s)?', '([0-9\,\.]+)( |)(km|m)',
     'track\s(and|\&amp;|\&)\sfield', 'decathalon', '(long|high|triple)\sjump', 'hurdle(s)?', 'pole\svault', 'shot(\s)?put', 'discus\sthrow', 'javelin(\sthrow)?', 'hammer throw',
@@ -165,7 +165,9 @@ var Olwimpics = {
   },
 
   party : function(tag) {
-    document.title = document.title.replace(Olwimpics._regexp, Olwimpics.text_replace);
+    jQuery(document).ready(function() {
+      document.title = document.title.replace(Olwimpics._regexp, Olwimpics.text_replace);
+    });
 
     /* image replacement */
     jQuery(tag).find('img, input[type=image]').each(function() {
