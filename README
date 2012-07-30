@@ -48,6 +48,8 @@ http://www.modernprimate.com/olwimpics-browser-plugin-blocks-all-mentions-of-the
 
 Changelog
 
+v 1.0.3
+  - Spanish words now translated! (Thanks anonymous!)
 v 1.0.2
   - Don't alter page title until document ready.
   - Include 'olympians' keyword (ht Chris Menning @ Modern Primate)
@@ -57,6 +59,16 @@ v 1.0.1
 v 1.0.0
   - Created, based on Shaved Bieber (http://github.com/gleuch/shaved-bieber)
 
+
+#######################################################################################
+
+Contributors
+
+* (anonymous) - Spanish keyword translations
+
+
+
+If you want to help add keyword for additional languages: contact@gleuch.com
 
 #######################################################################################
 

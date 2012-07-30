@@ -30,12 +30,22 @@ var Olwimpics = {
   /* --- Configuration ------------------------------------------------------------------ */
 
   keywords : [
+    /* EN */
     'olympics.org', 'international olympic committee', 'ioc', '(summer|winter|ancient) (games|olmpyics)', 'london(\s2012)?(\sgames)?', 'sports', '(opening|closing) ceremon(y|ies)', 'competition',
     'olympic( (games|motto))?', 'olympics', 'olympian(s)?',
     'gold( medal)?', 'silver( medal)?', 'bronze( medal)?',
-    '([0-9\,\.]+)( |)((kilo|m)et(er|re))(s)?', '([0-9\,\.]+)( |)(km|m)',
     'track\s(and|\&amp;|\&)\sfield', 'decathalon', '(long|high|triple)\sjump', 'hurdle(s)?', 'pole\svault', 'shot(\s)?put', 'discus\sthrow', 'javelin(\sthrow)?', 'hammer throw',
     'archery', 'athletics', 'aquatics', 'badminton', 'basketball', 'boxing', 'canoeing', 'cycling', 'diving', 'equestrian', 'fencing', 'field\shockey', 'football', 'soccer', 'gymnastics', 'handball', 'judo', '(modern\s)?Pentathlon', 'rowing', 'sailing', 'shooting', '(synchronized\s)?swimming', 'table tennis', 'taekwondo', 'tennis', 'triathlon', '(beach\s)?volleyball', 'water\spolo', 'weightlifting', 'wrestling',
+
+    /* ES */
+    'olympics.org', 'olímpico', 'comité olímpico internacional', 'comité olimpico internacional', 'ioc', 'coi', '(verano|invierno|antiguo) (juegos|olímpicos)', 'londres(\s2012)?(\sjuegos)?', 'deportes', '(inauguración|clausura) ceremon(nia|nias)', 'competición',
+    'olímpicos', 'olímpica', 'olimp(i|í)ada(|s)',
+    'oro( medalla)?', 'plata( medalla)?', 'bronce( medalla)?',
+    'pista\s(y|\&amp;|\&)\scampo', 'decatlón', '(largo|alto|triple)\ssalto', 'obstaculo(s)?', '(salto|pértiga)', '(disco|lanzamiento)', 'jabalina', '(martillo|tiro)',
+    'arquería', 'atletismo', 'acuaticos', 'badminton', 'basketball', 'baloncesto', 'boxeo', 'canotaje', 'ciclismo', 'buceo', 'equitación', 'esgrima', 'campo\shockey', 'futbol', 'fútbol', 'gimnasia', 'balonmano', 'judo', '(moderno\s)?Pentatlón', 'remo', 'vela', 'tiro', '(sincronizado\s)?nadado', 'tenis de mesa', 'ping pong', 'taekwondo', 'tenis', 'tenis de campo', 'triatlon', '(playa\s)?voleibol', 'waterpolo', 'pesas', 'lucha',
+
+    /* MISC */
+    '([0-9\,\.]+)( |)((kilo|m)et(er|re|ro))(s)?', '([0-9\,\.]+)( |)(km|m)',
   ],
   colors : ['rgb(0,133,199)', 'rgb(244,195,0)', 'rgb(0,0,0)', 'rgb(0,159,61)', 'rgb(223,0,36)'],
 
