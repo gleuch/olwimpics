@@ -48,6 +48,10 @@ http://www.modernprimate.com/olwimpics-browser-plugin-blocks-all-mentions-of-the
 
 Changelog
 
+v 1.0.4
+  - Keywords translated into Czech! (Thanks Jakub Ott!)
+  - Regexp fix for measure words (Thanks Robson Lille!)
+  - Adjusting to prevent flickering and constant re-wrapping of blocked words.
 v 1.0.3
   - Spanish words now translated! (Thanks anonymous!)
 v 1.0.2
@@ -65,6 +69,7 @@ v 1.0.0
 Contributors
 
 * (anonymous) - Spanish keyword translations
+* Jakub Ott - Czech keyword translations
 
 
 

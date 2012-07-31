@@ -31,7 +31,7 @@ var Olwimpics = {
 
   keywords : [
     /* EN */
-    'olympics.org', 'international olympic committee', 'ioc', '(summer|winter|ancient) (games|olmpyics)', 'london(\s2012)?(\sgames)?', 'sports', '(opening|closing) ceremon(y|ies)', 'competition',
+    'olympics.org', 'international olympic committee', 'ioc', '(summer|winter|ancient) (games|olmpyics)', 'london(\s2012)?(\sgames)?', 'sport(s)?', '(opening|closing) ceremon(y|ies)', 'competition',
     'olympic( (games|motto))?', 'olympics', 'olympian(s)?',
     'gold( medal)?', 'silver( medal)?', 'bronze( medal)?',
     'track\s(and|\&amp;|\&)\sfield', 'decathalon', '(long|high|triple)\sjump', 'hurdle(s)?', 'pole\svault', 'shot(\s)?put', 'discus\sthrow', 'javelin(\sthrow)?', 'hammer throw',
@@ -44,8 +44,11 @@ var Olwimpics = {
     'pista\s(y|\&amp;|\&)\scampo', 'decatlón', '(largo|alto|triple)\ssalto', 'obstaculo(s)?', '(salto|pértiga)', '(disco|lanzamiento)', 'jabalina', '(martillo|tiro)',
     'arquería', 'atletismo', 'acuaticos', 'badminton', 'basketball', 'baloncesto', 'boxeo', 'canotaje', 'ciclismo', 'buceo', 'equitación', 'esgrima', 'campo\shockey', 'futbol', 'fútbol', 'gimnasia', 'balonmano', 'judo', '(moderno\s)?Pentatlón', 'remo', 'vela', 'tiro', '(sincronizado\s)?nadado', 'tenis de mesa', 'ping pong', 'taekwondo', 'tenis', 'tenis de campo', 'triatlon', '(playa\s)?voleibol', 'waterpolo', 'pesas', 'lucha',
 
+    /* CZ */
+    'olympijáda',  'mezinárodní olympijáda', '((vrh|hod) (koulí|kladivem|oštěpem))', 'plavání', 'zahájení olympijády', 'gymnastika', 'vodní sporty', 'skok do (dálky|výšky|písku)', 'vítěz', 'umístil se', 'hráč',  'závodník',  'atleti',  'do cíle',   'cílový úsek',   'české holínky', 'bronzová( medajle)?', 'stříbrná( medajle)?', 'zlatá( medajle)?',
+
     /* MISC */
-    '([0-9\,\.]+)( |)((kilo|m)et(er|re|ro))(s)?', '([0-9\,\.]+)( |)(km|m)',
+    '([0-9\,\.]+)( |)((kilo|)met(er|re|ro))(s)?', '([0-9\,\.]+)( |)(km|m)'
   ],
   colors : ['rgb(0,133,199)', 'rgb(244,195,0)', 'rgb(0,0,0)', 'rgb(0,159,61)', 'rgb(223,0,36)'],
 
@@ -70,8 +73,6 @@ var Olwimpics = {
   /* ---- Starting Block ---------------------------------------------------------------- */
 
   start : function() {
-    console.log('start!')
-
     /* Ready... */
     for (var i in Olwimpics.keywords) Olwimpics.keywords[i] = '('+ Olwimpics.keywords[i] +')';
     Olwimpics._regexp = new RegExp('(^|[\\s\\\'\\"\\;\\:\\{\\[\\(\u201C\u2018“‘\\#\\/])('+ Olwimpics.keywords.join('|') +')($|[\\s\\.\\,\\?\\!\\\'\\"\\;\\:\\}\\]\\)&\u201D\u2019”’\\/])', 'img');
@@ -82,7 +83,7 @@ var Olwimpics = {
       try {Olwimpics._page_height = jQuery(tag).height();} catch(e) {}
       try {Olwimpics._page_scroll_height = jQuery(tag)[0].scrollHeight;} catch(e) {}
       Olwimpics._page_href = location.href;
-    } catch(e) {console.log('whaaa?')}
+    } catch(e) {}
 
     Olwimpics._recheck_intv = setTimeout(function() {Olwimpics.measure( Olwimpics._start_tag );}, Olwimpics._recheck_intv_delay);
     jQuery(window).load(function() {Olwimpics._loaded = true; Olwimpics._recheck_intv_delay = 1000;});
@@ -102,7 +103,6 @@ var Olwimpics = {
   },
 
   measure : function(tag) {
-    console.log('measure')
     var scroll_height = 0, page_height = 0, page_length = 0;
     try {scroll_height = jQuery(tag)[0].scrollHeight;} catch(e) {}
     try {page_height = jQuery(tag).height();} catch(e) {}
@@ -132,8 +132,8 @@ var Olwimpics = {
 
   filter : function() {
     if (this.nodeType == 1) {
+      if (this.className.match(RegExp(Olwimpics._class_name))) return false;
       if (['head', 'img', 'textarea', 'option', 'style', 'script', 'code', 'samp', 'select', 'iframe', 'input'].indexOf(this.tagName.toLowerCase()) > -1) return false;
-      if (jQuery(this).hasClass(Olwimpics.class_name)) return false;
     }
     Olwimpics.block.call(this);
   },
