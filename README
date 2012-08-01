@@ -48,6 +48,9 @@ http://www.modernprimate.com/olwimpics-browser-plugin-blocks-all-mentions-of-the
 
 Changelog
 
+v 1.0.5
+  - Keywords translated into French (Thanks anonymous!)
+  - Fix for broken image blockng. Images now blocked if has keyword in src, title, alt.
 v 1.0.4
   - Keywords translated into Czech! (Thanks Jakub Ott!)
   - Regexp fix for measure words (Thanks Robson Lille!)
@@ -70,7 +73,7 @@ Contributors
 
 * (anonymous) - Spanish keyword translations
 * Jakub Ott - Czech keyword translations
-
+* (anonymous) - French keyword translations
 
 
 If you want to help add keyword for additional languages: contact@gleuch.com

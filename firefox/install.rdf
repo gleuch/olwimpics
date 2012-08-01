@@ -4,7 +4,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>olwimpics@fffff.at</em:id>
     <em:name>Olwimpics</em:name>
-    <em:version>1.0.4</em:version>
+    <em:version>1.0.5</em:version>
 
     <em:creator>Greg Leuch (@gleuch)</em:creator>
     <em:developer>Greg Leuch</em:developer>
