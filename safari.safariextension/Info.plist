@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.5</string>
+	<string>1.0.6</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.5</string>
+	<string>1.0.6</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -27,13 +27,11 @@
 		<dict>
 			<key>Start</key>
 			<array>
-				<string>js/jquery-1.7.2.min.js</string>
-				<string>js/blocker.js</string>
 			</array>
 		</dict>
 	</dict>
 	<key>Description</key>
-	<string>Preserving your athletic self-esteem during your daily finger exercises.</string>
+	<string>Olwimpics no longer blocks Olympics chatter. Formerly preserving your athletic self-esteem during your daily finger exercises.</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>

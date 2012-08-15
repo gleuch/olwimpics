@@ -4,11 +4,11 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>olwimpics@fffff.at</em:id>
     <em:name>Olwimpics</em:name>
-    <em:version>1.0.5</em:version>
+    <em:version>1.0.6</em:version>
 
     <em:creator>Greg Leuch (@gleuch)</em:creator>
     <em:developer>Greg Leuch</em:developer>
-    <em:description>Preserving your athletic self-esteem during your daily finger exercises.</em:description>
+    <em:description>Olwimpics no longer blocks Olympics chatter. Formerly preserving your athletic self-esteem during your daily finger exercises.</em:description>
     <em:homepageURL>http://fffff.at/olwimpics</em:homepageURL>
     <em:iconURL>chrome://olwimpics/skin/icons/olwimpics48.png</em:iconURL>
     <em:icon64URL>chrome://olwimpics/skin/icons/olwimpics64.png</em:icon64URL>
@@ -24,7 +24,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- firefox -->
         <em:minVersion>10.*</em:minVersion>
-        <em:maxVersion>15.*</em:maxVersion>
+        <em:maxVersion>16.*</em:maxVersion>
       </Description>
     </em:targetApplication>
   </Description>
